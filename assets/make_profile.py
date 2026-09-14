@@ -411,7 +411,7 @@ def hero(p):
     for label, tx_, ty_, color, delay in [
         # TypeScript and Python lead; Swift is one of four, not the headline
         ("typescript", 762, 92, p["teal"], 0), ("python", 1094, 118, p["gold"], 1.3),
-        ("agentic ai", 806, 386, p["blue"], 0.7), ("swift", 1102, 336, p["dim"], 2.1),
+        ("agentic ai", 806, 386, p["blue"], 0.7), ("swift", 1102, 336, p["coral"], 2.1),
     ]:
         w = measure(label, "mono", 13) + 26
         d.add(
