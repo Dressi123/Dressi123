@@ -288,7 +288,20 @@ def hero(p):
             f'<animate attributeName="width" dur="{total}s" repeatCount="indefinite" calcMode="discrete" '
             f'keyTimes="{fmt_t(key)}" values="{fmt(widths)}"/></rect></clipPath>'
         )
-        d.text(tx, ry, role, "mono", ROLE_FS, p["head"], extra=f'clip-path="url(#role{i})"')
+        # Each role is also shown only during its own slot. The clip does the typing in a
+        # browser, but some renderers (the GitHub mobile app) ignore clip-path and would
+        # stack all four phrases on one line; there the static frame shows role 0 alone.
+        start, end = i * ROLE_WINDOW / total, (i + 1) * ROLE_WINDOW / total
+        if i == 0:
+            show = f'keyTimes="0;{end:.6f}" values="visible;hidden"'
+        elif i == len(ROLES) - 1:
+            show = f'keyTimes="0;{start:.6f}" values="hidden;visible"'
+        else:
+            show = f'keyTimes="0;{start:.6f};{end:.6f}" values="hidden;visible;hidden"'
+        d.text(tx, ry, role, "mono", ROLE_FS, p["head"],
+               extra=f'clip-path="url(#role{i})" visibility="{"visible" if i == 0 else "hidden"}"',
+               inner=f'{esc(role)}<animate attributeName="visibility" dur="{total}s" repeatCount="indefinite" '
+                     f'calcMode="discrete" {show}/>')
 
     # cursor: follows the typed width, solid while keys move, blinking at rest
     ctimes, cx_, cop = [], [], []
