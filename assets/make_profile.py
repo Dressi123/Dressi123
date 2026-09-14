@@ -757,8 +757,10 @@ def toolbox(p):
 # Section headers
 # ---------------------------------------------------------------------------
 
-def header(p, label, index):
-    W, H = 1200, 66
+def header(p, label, index, W=1200):
+    """A section heading. Phones get W=520: every README image is drawn at the
+    column's width, so a narrower canvas is what makes the same 31px label bigger."""
+    H = 66
     d = Doc(W, H, label)
     d.text(4, 44, f"{index:02d}", "mono-med", 15, p["gold"])
     d.text(38, 46, label, "title", 31, p["head"], ls=-0.4)
@@ -793,6 +795,7 @@ def main():
             (HERE / f"card-{spec['slug']}-{t}.svg").write_text(card(p, spec))
         for i, (slug, label) in enumerate(HEADERS, 1):
             (HERE / f"h-{slug}-{t}.svg").write_text(header(p, label, i))
+            (HERE / f"h-{slug}-{t}-phone.svg").write_text(header(p, label, i, W=520))
     files = sorted(HERE.glob("*.svg"))
     print(f"wrote {len(files)} svgs, {sum(f.stat().st_size for f in files) // 1024} KB")
 

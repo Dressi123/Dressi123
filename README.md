@@ -14,6 +14,8 @@ Lately that means AI agents, MCP servers and native Swift apps.
 <br>
 
 <picture>
+  <source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="assets/h-now-dark-phone.svg">
+  <source media="(max-width: 767px) and (prefers-color-scheme: light)" srcset="assets/h-now-light-phone.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/h-now-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/h-now-light.svg">
   <img alt="Right now" src="assets/h-now-dark.svg" width="100%">
@@ -28,6 +30,8 @@ Lately that means AI agents, MCP servers and native Swift apps.
 <br>
 
 <picture>
+  <source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="assets/h-work-dark-phone.svg">
+  <source media="(max-width: 767px) and (prefers-color-scheme: light)" srcset="assets/h-work-light-phone.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/h-work-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/h-work-light.svg">
   <img alt="Featured work" src="assets/h-work-dark.svg" width="100%">
@@ -49,6 +53,8 @@ Lately that means AI agents, MCP servers and native Swift apps.
 <br>
 
 <picture>
+  <source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="assets/h-journey-dark-phone.svg">
+  <source media="(max-width: 767px) and (prefers-color-scheme: light)" srcset="assets/h-journey-light-phone.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/h-journey-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/h-journey-light.svg">
   <img alt="How I got here" src="assets/h-journey-dark.svg" width="100%">
@@ -63,6 +69,8 @@ Lately that means AI agents, MCP servers and native Swift apps.
 <br>
 
 <picture>
+  <source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="assets/h-toolbox-dark-phone.svg">
+  <source media="(max-width: 767px) and (prefers-color-scheme: light)" srcset="assets/h-toolbox-light-phone.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/h-toolbox-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/h-toolbox-light.svg">
   <img alt="Toolbox" src="assets/h-toolbox-dark.svg" width="100%">
