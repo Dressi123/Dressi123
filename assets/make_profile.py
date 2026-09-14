@@ -585,9 +585,14 @@ def art_block(d, p, kind, tone, x, y, w, h):
         d.text(x + 14, y + 22, "±2 km", "mono", 10, p["teal"])
 
 
+# Transparent space under each card. The README wraps all cards in one paragraph
+# (so phones can stack them), which leaves no paragraph margin between rows.
+CARD_GAP = 18
+
+
 def card(p, spec):
     W, H = 600, 270
-    d = Doc(W, H, f'{spec["title"]}: {" ".join(spec["lines"])}')
+    d = Doc(W, H + CARD_GAP, f'{spec["title"]}: {" ".join(spec["lines"])}')
     tone = p[spec["tone"]]
     d.add(
         f'<defs><linearGradient id="cardbg" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="{p["card2"]}"/>'
@@ -770,6 +775,15 @@ HEADERS = [("now", "Right now"), ("work", "Featured work"), ("journey", "How I g
 
 
 def main():
+    # Placeholders for the responsive card grid. A <picture> can swap its image by
+    # screen width but not its width attribute, so each card appears twice and the
+    # copy not meant for this screen shows one of these instead:
+    #   blank-wide: under width="49%" it collapses to a sliver instead of a square
+    #   blank-dot:  with no width attribute it takes one pixel
+    (HERE / "blank-wide.svg").write_text(
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 1" width="600" height="1"/>\n')
+    (HERE / "blank-dot.svg").write_text(
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1" width="1" height="1"/>\n')
     for p in (DARK, LIGHT):
         t = p["name"]
         (HERE / f"hero-{t}.svg").write_text(hero(p))
