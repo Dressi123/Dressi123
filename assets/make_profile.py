@@ -226,8 +226,6 @@ def hero(p):
         f'<clipPath id="frame"><rect width="{W}" height="{H}" rx="18"/></clipPath>',
         f'<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{p["bg0"]}"/>'
         f'<stop offset="1" stop-color="{p["bg1"]}"/></linearGradient>',
-        f'<linearGradient id="title" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{t0}"/>'
-        f'<stop offset="0.55" stop-color="{t1}"/><stop offset="1" stop-color="{t2}"/></linearGradient>',
         f'<radialGradient id="glow" cx="{cx}" cy="{cy}" r="320" gradientUnits="userSpaceOnUse">'
         f'<stop offset="0" stop-color="{p["teal"]}" stop-opacity="0.24"/>'
         f'<stop offset="1" stop-color="{p["teal"]}" stop-opacity="0"/></radialGradient>',
@@ -258,9 +256,25 @@ def hero(p):
     d.text(x, 94, "~/dressi123 $ whoami", "mono", 15, p["dim"],
            inner=f'<tspan fill="{p["teal"]}">~/dressi123</tspan> <tspan fill="{p["gold"]}">$</tspan> whoami')
     d.add("</g>")
+    # The name fades white -> teal, but not with a gradient fill: WebKit (iOS Safari and
+    # the GitHub app) rasterizes gradient-filled text at 1x and it comes out blurry.
+    # Each letter gets a solid colour sampled from the same ramp at its own centre.
+    def ramp(t):
+        stops = [(0.0, t0), (0.55, t1), (1.0, t2)]
+        for (a, ca), (b, cb) in zip(stops, stops[1:]):
+            if t <= b:
+                k = (t - a) / (b - a)
+                rgb = [round(int(ca[j:j + 2], 16) + (int(cb[j:j + 2], 16) - int(ca[j:j + 2], 16)) * k) for j in (1, 3, 5)]
+                return "#%02X%02X%02X" % tuple(rgb)
+        return t2
+
     for n, (y, line) in enumerate(((176, "Andreas Jack"), (252, "Christiansen"))):
+        width = measure(line, "display", 78, -1.5)
+        spans = "".join(
+            f'<tspan fill="{ramp((measure(line[:i], "display", 78, -1.5) + measure(ch, "display", 78) / 2) / width)}">{esc(ch)}</tspan>'
+            for i, ch in enumerate(line))
         d.add(f"<g>{rise(0.18 + n * 0.12)}")
-        d.text(x - 4, y, line, "display", 78, "url(#title)", ls=-1.5)
+        d.text(x - 4, y, line, "display", 78, t0, ls=-1.5, inner=spans)
         d.add("</g>")
 
     # typing line

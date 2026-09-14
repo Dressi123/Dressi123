@@ -3,7 +3,6 @@
 <defs>
 <clipPath id="frame"><rect width="1200" height="420" rx="18"/></clipPath>
 <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FDFBF6"/><stop offset="1" stop-color="#EAF0F7"/></linearGradient>
-<linearGradient id="title" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0B1430"/><stop offset="0.55" stop-color="#123A5C"/><stop offset="1" stop-color="#0D9488"/></linearGradient>
 <radialGradient id="glow" cx="934" cy="214" r="320" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0D9488" stop-opacity="0.24"/><stop offset="1" stop-color="#0D9488" stop-opacity="0"/></radialGradient>
 <radialGradient id="warm" cx="80" cy="420" r="420" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#B7791F" stop-opacity="0.10"/><stop offset="1" stop-color="#B7791F" stop-opacity="0"/></radialGradient>
 <radialGradient id="sphere" cx="879" cy="149" r="213.0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#F7F9FC"/><stop offset="1" stop-color="#E6EEF8"/></radialGradient>
@@ -21,10 +20,10 @@
 <text x="68.0" y="94.0" class="mono" font-size="15" fill="#8494AA" ><tspan fill="#0D9488">~/dressi123</tspan> <tspan fill="#B7791F">$</tspan> whoami</text>
 </g>
 <g><animateTransform attributeName="transform" type="translate" dur="0.98s" fill="freeze" keyTimes="0;0.184;1" values="0 14;0 14;0 0" calcMode="spline" keySplines="0 0 1 1;0.2 0 0.2 1"/>
-<text x="64.0" y="176.0" class="display" font-size="78" fill="url(#title)" letter-spacing="-1.5" >Andreas Jack</text>
+<text x="64.0" y="176.0" class="display" font-size="78" fill="#0B1430" letter-spacing="-1.5" ><tspan fill="#0C1835">A</tspan><tspan fill="#0D203E">n</tspan><tspan fill="#0E2746">d</tspan><tspan fill="#102C4C">r</tspan><tspan fill="#103253">e</tspan><tspan fill="#123859">a</tspan><tspan fill="#124260">s</tspan><tspan fill="#114C65"> </tspan><tspan fill="#10586B">J</tspan><tspan fill="#0F6973">a</tspan><tspan fill="#0E797B">c</tspan><tspan fill="#0E8B84">k</tspan></text>
 </g>
 <g><animateTransform attributeName="transform" type="translate" dur="1.10s" fill="freeze" keyTimes="0;0.273;1" values="0 14;0 14;0 0" calcMode="spline" keySplines="0 0 1 1;0.2 0 0.2 1"/>
-<text x="64.0" y="252.0" class="display" font-size="78" fill="url(#title)" letter-spacing="-1.5" >Christiansen</text>
+<text x="64.0" y="252.0" class="display" font-size="78" fill="#0B1430" letter-spacing="-1.5" ><tspan fill="#0C1835">C</tspan><tspan fill="#0D203E">h</tspan><tspan fill="#0E2745">r</tspan><tspan fill="#0F2B4B">i</tspan><tspan fill="#102F50">s</tspan><tspan fill="#113455">t</tspan><tspan fill="#12385A">i</tspan><tspan fill="#124260">a</tspan><tspan fill="#105569">n</tspan><tspan fill="#0F6772">s</tspan><tspan fill="#0F777A">e</tspan><tspan fill="#0E8A83">n</tspan></text>
 </g>
 <g><animateTransform attributeName="transform" type="translate" dur="1.25s" fill="freeze" keyTimes="0;0.360;1" values="0 8;0 8;0 0" calcMode="spline" keySplines="0 0 1 1;0.2 0 0.2 1"/>
 <text x="68.0" y="314.0" class="mono-med" font-size="23" fill="#B7791F" >›</text>
