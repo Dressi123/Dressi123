@@ -34,11 +34,7 @@ Lately that means AI agents, MCP servers and native Swift apps.
 </picture>
 
 <p>
-<a href="https://github.com/Dressi123/second-brain-skill"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/card-second-brain-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/card-second-brain-light.svg">
-  <img alt="second-brain-skill: turns a folder of markdown into a memory Claude actually uses" src="assets/card-second-brain-dark.svg" width="49%">
-</picture></a>
+<a href="https://github.com/Dressi123/second-brain-skill"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-second-brain-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-second-brain-light.svg"><img alt="second-brain-skill: turns a folder of markdown into a memory Claude actually uses" src="assets/card-second-brain-dark.svg" width="49%"></picture></a>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-marble-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/card-marble-light.svg">
@@ -47,29 +43,13 @@ Lately that means AI agents, MCP servers and native Swift apps.
 </p>
 
 <p>
-<a href="https://github.com/Dressi123/claude-pet"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/card-claude-pet-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/card-claude-pet-light.svg">
-  <img alt="claude-pet: a native macOS desktop fox driven by Claude Code hooks" src="assets/card-claude-pet-dark.svg" width="49%">
-</picture></a>
-<a href="https://github.com/Dressi123/cf_ai_learning_companion"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/card-learning-companion-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/card-learning-companion-light.svg">
-  <img alt="AI Learning Companion: summaries, flashcards and quizzes from a PDF, on Cloudflare Workers AI" src="assets/card-learning-companion-dark.svg" width="49%">
-</picture></a>
+<a href="https://github.com/Dressi123/claude-pet"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-claude-pet-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-claude-pet-light.svg"><img alt="claude-pet: a native macOS desktop fox driven by Claude Code hooks" src="assets/card-claude-pet-dark.svg" width="49%"></picture></a>
+<a href="https://drive.google.com/file/d/1AUVve-4bVPUTJg2TUHy7zaDd6EXWRGFo/view?usp=sharing"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-ais-thesis-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-ais-thesis-light.svg"><img alt="Ship Trajectories: bachelor's thesis, a Transformer-GRU hybrid that reconstructs vessel routes from AIS data to within 2 km, trained on 16M+ records" src="assets/card-ais-thesis-dark.svg" width="49%"></picture></a>
 </p>
 
 <p>
-<a href="https://github.com/Dressi123/FakeOut"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/card-fakeout-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/card-fakeout-light.svg">
-  <img alt="FakeOut: weakly supervised rental-scam detection with Snorkel" src="assets/card-fakeout-dark.svg" width="49%">
-</picture></a>
-<a href="https://drive.google.com/file/d/1AUVve-4bVPUTJg2TUHy7zaDd6EXWRGFo/view?usp=sharing"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/card-ais-thesis-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/card-ais-thesis-light.svg">
-  <img alt="Ship Trajectories: bachelor's thesis, a Transformer-GRU hybrid that reconstructs vessel routes from AIS data to within 2 km, trained on 16M+ records" src="assets/card-ais-thesis-dark.svg" width="49%">
-</picture></a>
+<a href="https://github.com/Dressi123/FakeOut"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-fakeout-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-fakeout-light.svg"><img alt="FakeOut: a course project and paper showing that 165 hand labels (AUROC 0.82) beat Snorkel weak supervision over 99K rental listings (AUROC 0.45)" src="assets/card-fakeout-dark.svg" width="49%"></picture></a>
+<a href="https://github.com/Dressi123/cf_ai_learning_companion"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-learning-companion-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-learning-companion-light.svg"><img alt="AI Learning Companion: summaries, flashcards and quizzes from a PDF, on Cloudflare Workers AI" src="assets/card-learning-companion-dark.svg" width="49%"></picture></a>
 </p>
 
 <br>
@@ -97,7 +77,7 @@ Lately that means AI agents, MCP servers and native Swift apps.
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/toolbox-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/toolbox-light.svg">
-  <img alt="Languages: TypeScript, Python, Swift, Java, Rust, Solidity. AI and data: Claude API, MCP, PyTorch, YOLOv8, pandas, scikit-learn. Apps and services: Next.js, React, SwiftUI, Spring Boot, Node.js, PostgreSQL. Cloud: Cloudflare Workers, Vercel, AWS, Docker." src="assets/toolbox-dark.svg" width="100%">
+  <img alt="Languages: TypeScript, Python, JavaScript, Java, Go, Swift. AI and data: Claude API, LangChain, MCP, PyTorch, pandas, scikit-learn. Apps and services: Next.js, React, Vue.js, Node.js, tRPC, Temporal, PostgreSQL. Cloud and ops: Cloudflare Workers, Vercel, AWS, Docker, GitHub Actions, Datadog." src="assets/toolbox-dark.svg" width="100%">
 </picture>
 
 <br>
